@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scaler Academy">
+    <meta property="og:title" content="HTML Assignment | Scaler Academy">
+    <meta property="og:description" content="Tests your basic JavaScript and DOM manipulation skills">
+    <link rel="Shortcut Icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <title>Scaler HTML Assignment</title>
+
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Informs the browser that your page intends to establish a connection to another origin,
+         and that you'd like the process to start as soon as possible. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Load the fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,200;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="assets/data.js"></script>
+    <!-- defer specifies that the script is executed when the page has finished parsing. -->
+    <script src="assets/index.js" defer></script>
+    <!-- Example of an inline script  -->
+    <script>
+        // Start executing the script when the document loads
+        // Here we are adding an event listener which watches to DOM 
+        // and fires the callback function when the html is parsed without 
+        // waiting for any scripts
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Rendering All Cards ....');
+            // Render products
+            renderAllCards(productList);
+        });
+    </script>
+</body>
+</html>
