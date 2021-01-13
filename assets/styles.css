@@ -54,7 +54,7 @@ h1, h2, h3 {
 
 .product__price::before {
     color: #111111;
-    content: '₹ ';
+    content: 'Rs: ';
 }
 
 .product__tags {
