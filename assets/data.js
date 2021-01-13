@@ -67,3 +67,4 @@ const productList = [
     colors: ['red', 'yellow', 'blue']
   },
 ];
+window.productList = productList;
